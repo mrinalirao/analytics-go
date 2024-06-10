@@ -335,7 +335,7 @@ func (c *client) loop() {
 	defer ex.close()
 
 	mq := messageQueue{
-		maxBatchSize:  c.BatchSize,
+		maxBatchSize:  1,
 		maxBatchBytes: c.maxBatchBytes(),
 	}
 
